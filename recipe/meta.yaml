@@ -1,4 +1,4 @@
-{% set name = "ccache" %}
+{% set name = "gpuci-ccache" %}
 {% set version = "3.7.11dev0" %}
 
 package:
