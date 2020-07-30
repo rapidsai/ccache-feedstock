@@ -1,13 +1,13 @@
-{% set name = "ccache" %}
-{% set version = "3.7.11" %}
+{% set name = "gpuci-ccache" %}
+{% set version = "3.7.11dev0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/ccache/ccache/releases/download/v{{ version }}/ccache-{{ version }}.tar.gz
-  sha256: 34309a59d4b6b6b33756366aa9d3144a4655587be9f914476b4c0e2d36365f01
+  git_url: https://github.com/ccache/ccache.git
+  git_rev: e071bcfd37dfb02b4f1fa4b45fff8feb10d1cbd2
   patches: patch_test_suite.patch  # [osx]
 
 build:
@@ -19,6 +19,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - make
+    - cmake
   host:
     - zlib
     - xz
