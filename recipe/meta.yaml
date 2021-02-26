@@ -19,7 +19,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - make
-    - cmake=3.18.5
+    - cmake
   host:
     - zlib
     - xz
