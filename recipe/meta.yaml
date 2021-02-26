@@ -7,7 +7,7 @@ package:
 
 source:
   git_url: https://github.com/ccache/ccache.git
-  git_rev: e071bcfd37dfb02b4f1fa4b45fff8feb10d1cbd2
+  git_rev: 231fef47e48e27995c0c3ebc8db0ebd3de96b8fc
   patches: patch_test_suite.patch  # [osx]
 
 build:
