@@ -1,5 +1,5 @@
 {% set name = "gpuci-ccache" %}
-{% set version = "3.7.12dev0" %}
+{% set version = "4.2.0dev0" %}
 
 package:
   name: {{ name|lower }}
